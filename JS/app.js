@@ -39,6 +39,10 @@ class Bd {
 
     localStorage.setItem('id', id);
   }
+
+  recuperaTodosResgistros() {
+    console.log('Teste');
+  }
 }
 
 let db = new Bd();
@@ -61,7 +65,7 @@ function cadastrarDespesa() {
     valor.value
   );
   if (despesa.validaDados()) {
-    // db.gravar(despesa);
+    db.gravar(despesa);
 
     document.getElementById('tituloModal').innerHTML =
       'Registro cadastrado com sucesso!';
@@ -83,4 +87,8 @@ function cadastrarDespesa() {
 
     $('#modalRegistraDespesa').modal('show');
   }
+}
+
+function carregaListaDespesas() {
+  db.recuperaTodosResgistros();
 }
