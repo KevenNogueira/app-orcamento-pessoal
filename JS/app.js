@@ -88,6 +88,13 @@ function cadastrarDespesa() {
       'Despesa cadastrada com sucesso!';
     document.getElementById('buttonModal').className = 'btn btn-success';
 
+    ano.value = '';
+    mes.value = '';
+    dia.value = '';
+    tipo.value = '';
+    descricao.value = '';
+    valor.value = '';
+
     $('#modalRegistraDespesa').modal('show');
   } else {
     document.getElementById('tituloModal').innerHTML =
