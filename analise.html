@@ -56,10 +56,10 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Cadastro</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="consulta.html">Consulta</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="analise.html">Análise</a>
             </li>
           </ul>
@@ -70,11 +70,11 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col">
-          <h1 class="display-4">Consulta de Despesas</h1>
+          <h1 class="display-4">Análise de Despesas</h1>
         </div>
       </div>
 
-      <div class="row mb-2">
+      <div class="row mb-5">
         <div class="col-md-2">
           <select class="form-control" id="ano">
             <option value="">Ano</option>
@@ -100,10 +100,6 @@
           </select>
         </div>
 
-        <div class="col-md-2">
-          <input type="text" class="form-control" placeholder="Dia" id="dia" />
-        </div>
-
         <div class="col-md-6">
           <select class="form-control" name="tipo" id="tipo">
             <option value="">Tipo</option>
@@ -114,28 +110,8 @@
             <option value="5">Transporte</option>
           </select>
         </div>
-      </div>
 
-      <div class="row mb-5">
-        <div class="col-md-8">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Descrição"
-            id="descricao"
-          />
-        </div>
-
-        <div class="col-md-2">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Valor"
-            id="valor"
-          />
-        </div>
-
-        <div class="col-md-2 d-flex justify-content-end">
+        <div class="col-md-2 d-flex justify-content-center">
           <button
             type="button"
             class="btn btn-primary"
@@ -151,9 +127,9 @@
           <table class="table">
             <thead>
               <tr>
-                <th>Data</th>
+                <th>Ano</th>
+                <th>Mês</th>
                 <th>Tipo</th>
-                <th>Descrição</th>
                 <th>Valor</th>
               </tr>
             </thead>
